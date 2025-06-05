@@ -1,0 +1,50 @@
+/**
+ * Custom Utility Plugin Stylesheet
+ * Version: 1.0.1
+ */
+
+.custom-cta-button {
+  display: inline-block;
+  padding: 12px 28px; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff; 
+  background-color: #1E3D79; 
+  border: 2px solid #1E3D79; 
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.custom-cta-button:hover,
+.custom-cta-button:focus {
+  background-color: #162d5a; 
+  border-color: #162d5a;
+  color: #ffffff;
+  text-decoration: none;
+  outline: none; 
+}
+
+.custom-cta-button:focus-visible {
+    outline: 2px solid #005177;
+    outline-offset: 2px;
+}
+
+
+
+.custom-cta-button.is-style-outline {
+  background-color: transparent;
+  color: #1E3D79; /* Navy text */
+  border: 2px solid #1E3D79;
+}
+
+.custom-cta-button.is-style-outline:hover,
+.custom-cta-button.is-style-outline:focus {
+  background-color: #1E3D79;
+  color: #ffffff; 
+}
