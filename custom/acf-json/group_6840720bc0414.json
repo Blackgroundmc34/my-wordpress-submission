@@ -1,0 +1,159 @@
+{
+    "key": "group_6840720bc0414",
+    "title": "Text and Image Section",
+    "fields": [
+        {
+            "key": "field_6840720c42b5a",
+            "label": "Heading",
+            "name": "text_image_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter the main heading for this section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6840723442b5b",
+            "label": "Content",
+            "name": "text_image_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Enter the main text content for this section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6840725a42b5c",
+            "label": "Button Text",
+            "name": "text_image_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Select or enter the URL for the button.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_684076d642b5f",
+            "label": "Button Link",
+            "name": "text_image_button_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6840725a42b5c",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_684073f642b5d",
+            "label": "Image",
+            "name": "text_image_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Upload or select the image for this section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6840743442b5e",
+            "label": "Image Position",
+            "name": "text_image_image_position",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose whether the image appears on the left or right of the text.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "right": "Image on Right, Text on Left",
+                "left": "Image on Left, Text on Right"
+            },
+            "default_value": "right",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/custom-text-image-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1749057796
+}

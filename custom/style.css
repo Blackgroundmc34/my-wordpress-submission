@@ -1,0 +1,181 @@
+/*
+Theme Name: Custom Theme
+Theme URI: https://example.com/custom-theme/
+Author: Innocent
+Author URI: https://example.com/
+Description: A custom modular WordPress theme built for the practical assessment, based on the provided design file.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: custom-theme
+Tags: custom-background, custom-logo, custom-menu, editor-style, featured-images, block-styles, full-site-editing, responsive-layout, accessibility-ready, one-column, two-columns, left-sidebar, right-sidebar
+
+*/
+
+/* ==========================================================================
+Base Styles - Minimal reset and body defaults.
+More specific styles will be enqueued via theme-styles.php from assets/css/main.css
+or controlled by theme.json.
+==========================================================================
+*/
+
+/* A very basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+  color: #333;
+  background-color: #fff;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Links */
+a {
+  font-family: "Open Sans" !important;
+  color: #0073aa;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #005177;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.4;
+  font-family: "Open Sans" !important;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1em; /* Basic spacing */
+  font-family: "Open Sans" !important;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Accessibility: Screen reader text */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Alignments from WordPress editor */
+.alignleft {
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  clear: both;
+}
+
+.alignwide {
+  margin-left: -100px;
+  margin-right: -100px;
+  clear: both;
+}
+
+.alignfull {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  max-width: 100vw;
+  width: 100vw;
+  clear: both;
+}
+
+/* Clear floats */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
